@@ -1,0 +1,92 @@
+/*Styling for Index Page*/
+body{background-color: rgba(0,0,0,0.2);}
+#wrapper{
+    width:90%;
+    margin-left:3%;
+    margin-right:3%;
+    padding-left:2%;
+    padding-right:2%;
+    background-color: rgba(255,255,255,0.6);
+}
+#imgMainBanner{
+    width:100%;
+}
+#divIntro{
+    
+}
+h1{font-size:1.8em;text-align:center;margin-bottom:5px;}
+h2{font-size:1.5em;text-align:center;}
+h3{font-size:1.3em;text-align:left;margin-bottom:5px;}
+p{text-align:justify;margin-bottom:5px;}
+.spacer{
+    clear:both;
+    height:15px;
+    width:90%;
+    margin-left:5%;
+    border-bottom:2px solid black;
+}
+#divMain{
+    
+}
+.question{
+    font-style:italic;
+    font-size:1.5em;
+    text-align:center;
+    margin-bottom:10px;
+    margin-top:5px;
+}
+.question::after, .question::before{
+    content: '"';
+}
+#divLink{
+    width:60%;
+    margin-left:20%;
+    margin-top:10px;
+    margin-bottom:20px;
+    text-align:center;
+}
+#enterBuild{
+    font-size:7.5vw;
+    color:deeppink;
+    text-decoration:none;
+}
+#divVersion{
+    border:2px solid black;
+    padding:10px;
+}
+
+ul{
+    list-style-position:inside;
+    list-style-type:circle;
+}
+
+footer{
+    background-color:rgb(123,123,123);
+    padding:10px;
+    color:white;
+}
+footer a{
+    color:rgb(255,255,255);
+}
+/*Styling for myCanvasJS-X Page */
+
+/*Canvas Elements */
+#rightHandDiv, #leftHandDiv{
+    float:left;
+}
+
+#formControls{
+    width:400px;
+    float:left;
+}
+
+#wrapper2{
+    width:90%;
+    height:1300px;
+    margin-left:3%;
+    margin-right:3%;
+    padding-left:2%;
+    padding-right:2%;
+    background-color: rgba(255,255,255,0.6);
+    
+}
