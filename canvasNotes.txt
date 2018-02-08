@@ -1,0 +1,50 @@
+/* Some Notes on Canvas for ease of reference
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+
+Drawing Rectangle Functions(3 functions for primative square:
+
+fillRect(x,y,width, height); // Draws a filled rectangle
+strokeRect(x,y,width,height); // Draws a rectangular outline
+clearRect(x,y,width, height); // Clears the specified rectangular area, making it fully transparent
+
+All three take same parameters- top left is 0,0
+
+----------------------
+Drawing Paths Functions:
+
+beginPath(); // Creates a new path. once created, future drawing commands are directed into the path and used to build the path up.
+
+Path methods-
+
+closePath(); // Closes the path so that future 
+stroke();
+fill();
+moveTo(x,y); // Moves pen to the x,y coordinates
+lineTo(x,y);
+
+Curves-
+arc(x,y,radius,startAngle, endAngle, anticlockwise);
+// Draws an arc centered at x,y with radius r starting at startAngle and ending at endAngle going in the given direction indicated by anticlockwise(default is clockwise)
+
+arcTo(x1, y1, x2, y2, radius);
+// Draws an arc with given control points and radius, connected to the previous point by a straight line
+
+These are measured in Radians not degrees
+To convert:  radians = (Math.PI/180)*degrees
+
+quadraticCurveTo(cp1x, cp1y, x, y);
+// draws a Bezier curve from current point to point(x,y) using the control point specified by cp1x and cp1y (shared control point)
+
+bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
+// draws a Bezier curve from current point to point(x,y) using two separate control points: cp1 from current point, cp2 from x,y
+
+
+Gradients- need to set the path it is in, then add the created gradient
+Also need to set color stops 
+
+To Save a context and restore it after a transformation:
+ctx.save();
+ctx.rotate(Math.PI);
+drawSomething();
+ctx.restore();
+*/
