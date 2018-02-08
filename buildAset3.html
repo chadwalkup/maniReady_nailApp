@@ -1,0 +1,63 @@
+<body>
+    <div id="wrapper2">
+        <div data-role="header">
+            <a href="index.html"><img id="imgMainBanner" src="img/banner_925x197.png" alt="The main banner for Mani-Ready. The motto: are you ready to create? And an example hand with red stiletto nails is shown."></a>
+            <noscript><p>It seems that you need to enable your JavaScript in order for this web app to work for you.</p></noscript>
+        </div>
+	<div data-role="main" class="ui-content">
+		<div id="rightHandDiv">
+            <canvas id="rightHandCanvas" width="450" height="430"></canvas>  
+        </div>
+        <div  id="formControls">
+            <form>
+                <h3>User Controls</h3>
+                <input type="button" value="Change Length" id="btnSetNailLength">
+
+                <input type="range" name="points" id="sliderSetNailLength" value="70" min="65" max="120" step="1" onchange="setLength(this.value)">
+
+                <br><br>
+                <input type="button" value="Set Color" id="primaryColorValue">
+                <input type="color" name="color1" id="color1Choice" value="#ffffff" onchange="setPrimaryColor(this.value)">
+
+                <br><br>
+        <!--
+            <input type="button" value="Set Secondary Color" id="btnSetSecondaryColor">
+            <input type="color" name="color2" id="color2Choice" value="#0000ff">
+            
+            <br><br> 
+            <input type="button" value="Glitter?" id="btnToggleGlitter">
+            <input type="checkbox" id="glitterChoice" value="false">
+            <br><br>
+        -->
+                <p>Nail Shape</p>
+                <select onchange="setNailShape(this.value)">
+                    <option value="round">Round</option>
+                    <option value="stiletto">Stiletto</option>
+                    <option value="square">Square</option>
+                    <option value="coffin">Coffin</option>
+                    <option value="flare">Flare</option>
+                </select> 
+                <br><br>
+                <p>Smile Choice</p>
+                <select onchange="setSmileChoice(this.value)">
+                    <option value="none">None</option>
+                    <option value="french">French</option>
+                    <option value="chevron">Chevron</option>
+                </select>
+                <br><br>
+
+            </form>
+        </div>
+        <div id="leftHandDiv">
+            <canvas id="leftHandCanvas" width="600" height="430"></canvas>    
+        </div>
+	</div>
+ 
+    </div>
+<!--
+    <input type="button" value="Clear Canvas" id="clearButton" onclick="clearCanvas()">
+    <input type="button" value="Redraw Canvas" id="drawCanvas" onclick="drawAllNails()">
+-->
+    <script src="js/myCanvasJS3.js"></script>
+
+</body>
