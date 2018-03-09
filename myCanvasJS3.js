@@ -1,4 +1,4 @@
-* 	Mani-Ready Web App: Chad Walkup Update 1/27/2018
+/* 	Mani-Ready Web App: Chad Walkup Update 1/27/2018
 	Version 3: Connects to two HTML Canvas elements, one for each hand
 	
     Changes: Variables changed to each finger being the object with properties
