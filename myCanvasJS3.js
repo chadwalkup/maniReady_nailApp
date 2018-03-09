@@ -599,7 +599,7 @@ function drawNailBevel(finger, canvas){} // Do-square base
 function drawNailLipstick(finger, canvas){} // Do-square base
 function drawNailMountain(finger, canvas){} // Do-stiletto base
 
-/* Version 2 Code- (delete in version 4)- this was original code, mading stiletto shape
+/* Version 2 Code- (delete in version 4)- this was original code, making stiletto shape
 function drawVerticleNail(startX, startY, radius, canvas){
     if(canvas.getContext){
         var ctx =canvas.getContext('2d');
